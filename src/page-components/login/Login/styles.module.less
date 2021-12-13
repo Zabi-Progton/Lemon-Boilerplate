@@ -1,0 +1,68 @@
+@import '/src/styles/variables.less';
+@import '/src/styles/mixin.less';
+
+.comp-wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+// DARK-MODE--COMP
+
+.login-card-base {
+  width: 400px;
+  height: 450px;
+  background-color: @primary-color-bg;
+  border-radius: @border-radius-base;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+
+  .login-card-header {
+    padding: 1.4rem;
+  }
+
+  .login-card-content {
+    padding: 0rem 1.4rem;
+  }
+
+  .login-card-footer {
+    padding: 0.5rem 1.4rem;
+    display: inline-flex;
+    padding-top: 2.5rem;
+    font-size: 12px;
+    .text-with-image {
+      display: inline-flex;
+      align-items: center;
+    }
+    .text-image {
+      padding: 0 0.5rem;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+// Special dark mode config
+// DARK-MODE--COMP
+.comp-wrapper--alwaysDarkMode,
+:global(.@{THEME--DARK}) .comp-wrapper {
+  .login-card-base {
+    background-color: @primary-color-bg--dark;
+    border-radius: @border-radius-base;
+
+    .login-card-header {
+      h4,
+      p,
+      span {
+        color: @text-color--dark;
+        
+      }
+    }
+
+    .login-card-footer {
+      span {
+        color: @secondary-text-color--dark;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import '/src/styles/variables.less';
+@import '/src/styles/mixin.less';
+
+.comp-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.base-password-field {
+  padding: 1rem;
+  border-radius: @border-radius-base;
+  border: none;
+  background-color: @gray-color;
+
+  input {
+    background-color: @gray-color;
+  }
+}
+
+.comp-wrapper--alwaysDarkMode,
+:global(.@{THEME--DARK}) .base-password-field {
+  background-color: @gray-color--dark;
+  color: @primary-color--dark;
+  input {
+    background-color: @gray-color--dark;
+    color: @primary-color--dark
+  }
+  svg {
+    fill: @gray-color;
+  }
+}

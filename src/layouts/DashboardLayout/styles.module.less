@@ -1,0 +1,43 @@
+@import '/src/styles/variables.less';
+@import '/src/styles/mixin.less';
+
+.comp-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-header {
+  //padding-top: 50px;
+}
+
+.layout-container {
+  flex: 1;
+}
+
+.layout-footer {
+  //padding-bottom: 20px;
+}
+
+.text-with-image {
+  display: inline-flex;
+  align-items: center;
+}
+.text-image {
+  padding: 0 0.5rem;
+  margin-bottom: 10px;
+}
+.content-wrapper-dashboard {
+  margin: 63px 0px 0px 80px;
+}
+.header-wrapper-dashboard {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  
+}
+
+// DARK-MODE--COMP
+.comp-wrapper--alwaysDarkMode,
+:global(.@{THEME--DARK}) .comp-wrapper {
+}

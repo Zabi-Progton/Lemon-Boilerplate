@@ -1,0 +1,66 @@
+@import '/src/styles/variables.less';
+@import '/src/styles/variables-css.less';
+@import '/src/styles/animate.less';
+
+html,
+body {
+  width: 100%;
+}
+
+html {
+  text-size-adjust: 100%;
+}
+
+body {
+  font-size: 14px;
+  background-color: var(--primary-color-bg);
+  font-family: 'Readex Pro', sans-serif;
+}
+
+html,
+body,
+#root,
+#__next,
+.app {
+  height: 100%;
+}
+
+.theme-dark {
+  background-color: var(--primary-color-bg--dark);
+  transition: all 0.5s;
+
+  body {
+    background-color: var(--primary-color-bg--dark);
+    transition: all 0.5s;
+  }
+}
+
+.g-icon-spin {
+  @s: 0.6s;
+  -webkit-animation: infiniteRotating @s infinite linear;
+  animation: infiniteRotating @s infinite linear;
+}
+
+//
+
+//svg[stroke='currentColor'] {
+.rcicon {
+  line-height: 1;
+  display: inline-block;
+  vertical-align: -3px;
+  font-size: 16px;
+}
+
+.g-rcicon {
+}
+
+// ANT design normalizations
+.ant-form-item-explain-error {
+ padding-top: 4px;
+  li {
+    list-style: none;
+    font-size: 9px;
+    padding-left: 15px;
+    color: #eb2f06; //Tomato Red
+  }
+}

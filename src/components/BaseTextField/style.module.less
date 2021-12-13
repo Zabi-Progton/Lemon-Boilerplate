@@ -1,0 +1,39 @@
+@import '/src/styles/variables.less';
+@import '/src/styles/mixin.less';
+
+.comp-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.base-input-field-wrapper {
+  width: 100%;
+  margin-bottom: 0;
+  height:70px;
+  max-height:70px;
+  
+}
+
+.base-input-field {
+  padding: 1rem;
+  border-radius: @border-radius-base;
+  border: none;
+  background-color: @gray-color;
+}
+
+.theme-dark {
+  .base-input-field-wrapper{
+    
+  }
+}
+
+// DARK-MODE--COMP
+.comp-wrapper--alwaysDarkMode,
+:global(.@{THEME--DARK}) .base-input-field {
+  background-color: @gray-color--dark;
+  color: @primary-color--dark;
+}

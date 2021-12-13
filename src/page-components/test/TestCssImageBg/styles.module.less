@@ -1,0 +1,24 @@
+@import '/src/styles/variables.less';
+@import '/src/styles/mixin.less';
+
+.comp-wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  flex-direction: column;
+}
+
+.image-bg {
+  display: table;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  //background-image: url('./image.jpg');
+}
+
+// DARK-MODE--COMP
+.comp-wrapper--alwaysDarkMode,
+:global(.@{THEME--DARK}) .comp-wrapper {
+}

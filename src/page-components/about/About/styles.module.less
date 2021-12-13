@@ -1,0 +1,17 @@
+@import '/src/styles/variables.less';
+@import '/src/styles/mixin.less';
+
+.comp-wrapper {
+  position: relative;
+  height: 100%;
+  padding: 3rem;
+
+  //
+  // just test less file aliase
+  //.just-a-bgc();
+}
+
+// DARK-MODE--COMP
+.comp-wrapper--alwaysDarkMode,
+:global(.@{THEME--DARK}) .comp-wrapper {
+}
