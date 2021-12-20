@@ -33,6 +33,12 @@ export default class CustomDocument extends Document {
             name="apple-mobile-web-app-status-bar-style"
             content="default"
           />
+
+          {/* 'https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600&display=swap' */}
+          <link
+            href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600&display=swap"
+            rel="stylesheet"
+          />
           <link rel="apple-touch-icon" href="/favicons/logo192.png" />
           <link rel="manifest" href="/manifest.json" />
         </Head>
