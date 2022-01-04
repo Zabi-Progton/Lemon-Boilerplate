@@ -31,7 +31,7 @@ export const Admin: React.FC<IProps> = (props) => {
       <HtmlMeta title={props.pageProps?.name} />
       <>
         <Row gutter={[30, 10]}>
-          <Col lg={8} md={16}>
+          <Col lg={8} md={12}>
             <Text type="secondary">Redux linking (Using redux-toolkit)</Text>
             <Divider />
             <h2>The current count is: {count}</h2>
@@ -52,7 +52,7 @@ export const Admin: React.FC<IProps> = (props) => {
               </Col>
             </Row>
           </Col>
-          <Col lg={8} md={16}>
+          <Col lg={8} md={12}>
             <Text type="secondary">
               Redux thunk API fetch (Using redux-toolkit)
             </Text>
@@ -75,7 +75,33 @@ export const Admin: React.FC<IProps> = (props) => {
               </Col>
             </Row>
           </Col>
-          <Col lg={8} md={16} style={{paddingTop: 0}}>
+          <Col lg={8} md={12} style={{paddingTop: 0}}>
+          <Text type="secondary">
+              Basic Roster Card Component
+            </Text>
+            <Divider />
+            <RosterCard
+              title="Login"
+              onClick={() => {}}
+              loading={false}
+            />
+          </Col>
+          <Col lg={24} md={24} style={{paddingTop: 0}}>
+          <Text type="secondary">
+              Custom sortable table component + Select + Expandable rows + Pagination + Per/row actions
+            </Text>
+            <Divider />
+            <RosterCard
+              title="Login"
+              onClick={() => {}}
+              loading={false}
+            />
+          </Col>
+          <Col lg={24} md={24} style={{paddingTop: 0}}>
+          <Text type="secondary">
+              Custom sortable table component + Select + Expandable rows + Pagination + Per/row actions
+            </Text>
+            <Divider />
             <RosterCard
               title="Login"
               onClick={() => {}}

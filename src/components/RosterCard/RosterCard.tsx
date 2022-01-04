@@ -60,6 +60,18 @@ export const RosterCard: React.FC<IProps> = ({
           dolorum ipsam architecto eaque ad non vitae repellendus blanditiis,
           ducimus distinctio culpa quam repellat eum suscipit incidunt ab porro
           pariatur. Quibusdam.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+          dolorum ipsam architecto eaque ad non vitae repellendus blanditiis,
+          ducimus distinctio culpa quam repellat eum suscipit incidunt ab porro
+          pariatur. Quibusdam.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+          dolorum ipsam architecto eaque ad non vitae repellendus blanditiis,
+          ducimus distinctio culpa quam repellat eum suscipit incidunt ab porro
+          pariatur. Quibusdam.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+          dolorum ipsam architecto eaque ad non vitae repellendus blanditiis,
+          ducimus distinctio culpa quam repellat eum suscipit incidunt ab porro
+          pariatur. Quibusdam.
         </div>
         <div className={cx(styles['roster-card-footer'])}>
           <span>Updated: 2 hours ago</span>
