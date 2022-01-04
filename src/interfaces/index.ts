@@ -7,4 +7,5 @@ export type {
   IBaseFieldProps,
   IBasePasswordFieldProps,
   IBaseButtonProps,
+  IIRosterTitleProps,
 } from './jsx.interface';

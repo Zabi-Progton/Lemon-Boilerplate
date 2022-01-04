@@ -52,4 +52,18 @@ export interface ILayoutBaseProps {
   pageProps?: any;
 }
 
+//Custom Props Interfaces
+export interface IIRosterTitleProps {
+  className?: string;
+  style?: React.CSSProperties;
+  alwaysDarkMode?: boolean;
+  title: string;
+  icon?: ReactNode;
+  size?: SizeType;
+  loading?: boolean;
+  totalCount: string;
+  extraTitle: string;
+  onClick?: React.MouseEventHandler<HTMLElement>;
+}
+
 export interface IGetStaticPropsCtx {}

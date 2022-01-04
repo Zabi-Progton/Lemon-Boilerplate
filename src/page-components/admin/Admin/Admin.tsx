@@ -8,6 +8,7 @@ import styles from './styles.module.less';
 import { useAppDispatch, useAppSelector, useDarkMode } from '@/hooks';
 import { decrement, increment, selectCount } from '@/features/login';
 import { selectKanye, getKanyeQuote } from '@/features/quotes/quotesSlice';
+import { RosterCard } from '@/components/RosterCard/RosterCard';
 
 const { Text } = Typography;
 interface IProps extends IPageBaseProps {}
@@ -30,7 +31,7 @@ export const Admin: React.FC<IProps> = (props) => {
       <HtmlMeta title={props.pageProps?.name} />
       <>
         <Row gutter={[30, 10]}>
-          <Col span={8}>
+          <Col lg={8} md={16}>
             <Text type="secondary">Redux linking (Using redux-toolkit)</Text>
             <Divider />
             <h2>The current count is: {count}</h2>
@@ -51,11 +52,17 @@ export const Admin: React.FC<IProps> = (props) => {
               </Col>
             </Row>
           </Col>
-          <Col span={8}>
-          <Text type="secondary">Redux thunk API fetch (Using redux-toolkit)</Text>
+          <Col lg={8} md={16}>
+            <Text type="secondary">
+              Redux thunk API fetch (Using redux-toolkit)
+            </Text>
             <Divider />
-            <Text ellipsis style={{fontSize: '1.2rem', marginBottom: '1rem'}}>Quote will come here: {data.quote}</Text >
-            <Text ellipsis type="warning"  style={{marginBottom: '1em'}}>Quote will come here: {data.quote}</Text>
+            <Text ellipsis style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>
+              Quote will come here: {data.quote}
+            </Text>
+            <Text ellipsis type="warning" style={{ marginBottom: '1em' }}>
+              Quote will come here: {data.quote}
+            </Text>
             <Row>
               <Col span={24}>
                 <Button
@@ -67,6 +74,13 @@ export const Admin: React.FC<IProps> = (props) => {
                 </Button>
               </Col>
             </Row>
+          </Col>
+          <Col lg={8} md={16} style={{paddingTop: 0}}>
+            <RosterCard
+              title="Login"
+              onClick={() => {}}
+              loading={false}
+            />
           </Col>
         </Row>
       </>
