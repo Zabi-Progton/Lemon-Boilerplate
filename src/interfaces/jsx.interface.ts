@@ -27,13 +27,12 @@ export interface IBasePasswordFieldProps {
   iconRender?: (visible: boolean) => ReactNode;
 }
 
-
 export interface IBaseButtonProps {
   className?: string;
   style?: React.CSSProperties;
   alwaysDarkMode?: boolean;
   title: string;
-  icon?: ReactNode
+  icon?: ReactNode;
   size?: SizeType;
   loading?: boolean;
   onClick?: React.MouseEventHandler<HTMLElement>;

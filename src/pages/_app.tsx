@@ -6,7 +6,12 @@ import { Router } from 'next/router';
 
 import { Provider } from 'react-redux';
 import { ErrorBoundary, LoadingSpinner } from '@/components';
-import { AuthLayout, DashboardLayout, MasterLayout, TestLayout } from '@/layouts';
+import {
+  AuthLayout,
+  DashboardLayout,
+  MasterLayout,
+  TestLayout,
+} from '@/layouts';
 import { DISABLE_SSR_TRANSITION } from '@/pages/_document';
 import { isServer } from '@/utils';
 import { ILayout } from '@/interfaces/jsx.interface';

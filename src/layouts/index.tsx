@@ -2,4 +2,4 @@
 export { MasterLayout } from './MasterLayout/MasterLayout';
 export { TestLayout } from './TestLayout/TestLayout';
 export { AuthLayout } from './AuthLayout/AuthLayout';
-export { DashboardLayout } from './DashboardLayout/DashboardLayout'
+export { DashboardLayout } from './DashboardLayout/DashboardLayout';
