@@ -23,7 +23,7 @@ interface Values {
 interface IProps extends IPageBaseProps {}
 
 export const Login: React.FC<IProps> = (props) => {
-  // useDarkMode()
+  useDarkMode()
   return (
     <PageWrapper
       className={cx(
